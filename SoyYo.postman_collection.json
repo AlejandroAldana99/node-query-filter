@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "bb7f9385-32f3-42ce-883b-acd2b52a43e2",
+		"name": "SoyYo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Entidades-origen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://awovcw7p76.execute-api.us-east-1.amazonaws.com/dev/entity/v2.1/entities/1",
+					"protocol": "https",
+					"host": [
+						"awovcw7p76",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"entity",
+						"v2.1",
+						"entities",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Entidades-origen",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://awovcw7p76.execute-api.us-east-1.amazonaws.com/dev/entity/v2.1/entities/2",
+							"protocol": "https",
+							"host": [
+								"awovcw7p76",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"entity",
+								"v2.1",
+								"entities",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 06 Feb 2022 18:54:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "288"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "d328498f-ba2b-4152-b6d7-e42a22a27904"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "NIjqaFK7oAMFg0Q="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-62001975-17541dcf6cc1ab8f60f7b779"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"F132\",\n    \"message\": \"Data found\",\n    \"type\": \"success\",\n    \"data\": {\n        \"entityId\": 2,\n        \"name\": \"Bancolombia\",\n        \"identificationNumber\": \"987654321\",\n        \"expirationDate\": \"2030-10-27\",\n        \"contactName\": \"Mauricio Serna Florez\",\n        \"contactMail\": \"msflore@bancolombia.com.co\",\n        \"ipAddress\": \"\",\n        \"logo\": \"\"\n    },\n    \"traceId\": \"233859\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Entity List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"startId\":1,\r\n    \"endId\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/entities/filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"entities",
+						"filter"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Entity List",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startId\":1,\r\n    \"endId\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/entities/filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"entities",
+								"filter"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "870"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"366-6H3yAb8okj9JyxbX5bKXtFj3jx0\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Feb 2022 19:09:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"entity\": [\n        {\n            \"code\": \"F132\",\n            \"message\": \"Data found\",\n            \"type\": \"success\",\n            \"data\": {\n                \"entityId\": 2,\n                \"name\": \"Bancolombia\",\n                \"identificationNumber\": \"987654321\",\n                \"expirationDate\": \"2030-10-27\",\n                \"contactName\": \"Mauricio Serna Florez\",\n                \"contactMail\": \"msflore@bancolombia.com.co\",\n                \"ipAddress\": \"\",\n                \"logo\": \"\"\n            },\n            \"traceId\": \"233878\"\n        },\n        {\n            \"code\": \"F132\",\n            \"message\": \"Data found\",\n            \"type\": \"success\",\n            \"data\": {\n                \"entityId\": 3,\n                \"name\": \"Mi Aguila\",\n                \"identificationNumber\": \"9008508671\",\n                \"expirationDate\": \"2030-10-27\",\n                \"contactName\": \"Contacto Mi Aguila\",\n                \"contactMail\": \"contacto@miaguila.com.co\",\n                \"ipAddress\": \"\",\n                \"logo\": \"\"\n            },\n            \"traceId\": \"233877\"\n        },\n        {\n            \"code\": \"F132\",\n            \"message\": \"Data found\",\n            \"type\": \"success\",\n            \"data\": {\n                \"entityId\": 1,\n                \"name\": \"Tuya\",\n                \"identificationNumber\": \"123456789\",\n                \"expirationDate\": \"2030-10-27\",\n                \"contactName\": \"Ana Maria Palacio\",\n                \"contactMail\": \"apalacioh@tuya.com.co\",\n                \"ipAddress\": \"\",\n                \"logo\": \"\"\n            },\n            \"traceId\": \"233879\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

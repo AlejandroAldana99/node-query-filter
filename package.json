@@ -5,14 +5,15 @@
   "scripts": {
     "dev:build": "webpack --mode=development",
     "start": "yarn run dev:build && concurrently \"webpack --mode=development -w\" \"nodemon dist/server.js\"",
-    "build": "webpack"
+    "build": "webpack",
+    "test": "mocha ./src/test/*.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlejandroAldana99/node-query-filter.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alejandro Aldana",
   "bugs": {
     "url": "https://github.com/AlejandroAldana99/node-query-filter/issues"
   },
