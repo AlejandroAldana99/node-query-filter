@@ -14,12 +14,6 @@ Este repositorio es de ejemplo y ejercicio de como consumir un servicio externo 
 - Generar respuesta.
 ```
 
-> Testing:
-```
-- Posicionarse sobre el mismo path que este README.md.
-- Ejecutar "npm run test".
-```
-
 > Docker:
 ```
 - Ejecutar "docker build -t co.com.soyyo.entity.filter-dev-1_0_0 .".
