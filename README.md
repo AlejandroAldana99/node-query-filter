@@ -6,7 +6,7 @@ Este repositorio es de ejemplo y ejercicio de como consumir un servicio externo 
 
 > Execution:
 ```
-- Antes de todo, se pueden editar los valores necesarios en el archivo .ENV.
+- Antes de todo, se pueden editar los valores necesarios en el archivo .ENV (O crear si es la primera ejecusion).
 
 - Posicionarse sobre el mismo path que este README.md.
 - Ejecutar "npm start" para el caso de pruebas en localhost (localhost:3000 por defecto).
