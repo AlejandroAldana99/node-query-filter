@@ -1,3 +1,4 @@
+/* Entiry controller file */
 import { body }                       from "express-validator";
 import { createValidator, getEntity } from '~/Helpers';
 import * as constants                 from "~/Config/constants";

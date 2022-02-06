@@ -1,4 +1,4 @@
-// Require Own Modules
+/* Routes file */
 import * as EntityController from "./Controllers/entity.controller";
 
 const routes = router => {
