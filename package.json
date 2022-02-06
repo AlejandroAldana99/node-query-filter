@@ -5,8 +5,7 @@
   "scripts": {
     "dev:build": "webpack --mode=development",
     "start": "yarn run dev:build && concurrently \"webpack --mode=development -w\" \"nodemon dist/server.js\"",
-    "build": "webpack",
-    "test": "mocha ./src/test/*.js"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
