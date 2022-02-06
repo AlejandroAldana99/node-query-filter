@@ -1,3 +1,4 @@
+/* File to valid all input data */
 import { validationResult } from "express-validator";
 
 const createValidator = (validations = [] ) => [

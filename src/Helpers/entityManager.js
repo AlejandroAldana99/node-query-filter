@@ -1,3 +1,4 @@
+/* Manager for any request to awovcw7p76 */
 import http from 'https';
 
 const getEntity = async (id) => {
