@@ -1,13 +1,14 @@
+# SELECT IMAGE
 FROM node
-
+# SELECT WORKDIR
 WORKDIR /app
-
+# COPY PACKAGE
 COPY package*.json ./
-
+# INSTAL DEPENDENCIES
 RUN npm install
-
+# IMPROVE CACHE
 COPY . .
-
+# EXPOSE
 EXPOSE 3000
-
+# RUN
 CMD ["npm", "start"]
